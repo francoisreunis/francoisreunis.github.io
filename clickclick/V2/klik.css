@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+html{
+    background-image: url('testClick.png');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+
+nav p{
+    display: inline-block;
+    color: white;
+    margin: 0;
+    line-height: 30px;
+    font-family: arial;
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+nav p a{
+    text-decoration-color: white;
+    color: white;
+}
+
+.gris{
+    color: rgb(145, 145, 145);
+}
+
+.reseaux{
+    margin: 0 10px;
+}
+
+.version{
+    float: right;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+
+
+footer p{
+    margin: 0;
+    line-height: 30px;
+    font-family: arial;
+    font-size: 16px;
+}
+
+footer p a{
+    text-decoration-color: white;
+    color: white;
+}
+
+#infos{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: width 0.4s, height 0.3s;
+    overflow: hidden;
+}
+
+#infos:hover{
+    height: 80%;
+    width: 20%;
+    opacity: 0.9;
+    display: inline;
+    padding: 0 30px;
+}
+
+#infos h4{
+    color: white;
+    text-align: center;
+    margin: 9px 0 0;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+#infos h2{
+    color: white;
+    font-family: Roboto;
+    margin-top: 30px; 
+}
+
+#infos p{
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.colonne{
+    width: 33%;
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+
+.colonne1{
+    text-align: center;
+    margin-top: 220px;
+}
+
+.here{
+    width: 250px;
+    display: inline-block;
+}
+
+.here h1{
+    font-family: arial;
+    font-size: 80px;
+    margin: 0;
+    display: inline-block;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+}
+
+.colonne1 h2{
+    float: right;
+    font-size: 100px;
+    margin: 0;
+    line-height: 184px;
+    margin-right: 20px;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+}
+
+.compteur, .compteur2{
+    text-align: center;
+    color: white;
+}
+
+.compteur h1, .compteur2 h1{
+    font-size: 100px;
+    margin: 10px 0 0 0; 
+    font-family: Roboto;
+    font-weight: 300;
+    text-shadow: 4px 4px 8px black;
+}
+
+
+.compteur h3, .compteur2 h3{
+    font-size: 30px;
+    margin: 0 0 30px;
+    font-family: Roboto;
+    font-weight: 300;;
+    color: rgb(197, 197, 197);
+    text-shadow: 4px 4px 8px black;
+}
+
+.bouton{
+    text-align: center;
+}
+
+.bouton img{
+    width: 55%;
+    cursor: pointer;
+}
+
+#clicker{
+    border-radius: 125px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    outline-style: none;
+}
+
+#clicker:active {
+    transform: translateY(4px);
+}
+
+.compteur2 h1{
+    margin: 0;
+}
+
+.compteur2 h3{
+    margin: 30px 0 0;
+}
+
+.ranking{
+    width: 60%;
+    /* height: 550px; */
+    background-color: rgba(0, 0, 0, 0.753);
+    margin: 60px 40px 50px 80px;
+    padding: 20px 20px 10px;
+    box-sizing: border-box;
+}
+
+.ranking h3{
+    color:white;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px;
+    float: right;
+    margin: 10px 0;
+}
+
+.ranking p{
+    color: white;
+    margin: 0 0 8px 4px;
+}
+
+.ligne{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 60px;
+}
+
+#leaderboard{
+    color: white;
+}
+
+table{
+    width: 100%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#yourPos{
+    width: 100%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+
+#yourPos tr{
+    width: 100%;
+}
+
+tr{
+    height: 30px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+#leaderboard li{
+    line-height: 180%;
+}
+
+#userClicks{
+    text-align: right;
+}
+
+#tonScore{
+    text-align: right;
+}
+
+#firstStep{
+    background-color: rgba(255, 255, 255, 0.151); 
+    margin: 10px 0;
+    position: relative;
+}
+
+#firstStep input{
+    width: 70%;
+    background: none;
+    padding-left: 6px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-size: 16px;
+    outline-style: none;
+    box-sizing: border-box;
+   
+    border: none;
+}
+
+#firstStep input::placeholder{
+    color: rgb(197, 197, 197);
+    font-size: 16px;  
+    font-weight: 300;
+}
+
+#saveButton{
+    width: 25%;
+    background: none;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.685);
+    height: 30px; 
+    vertical-align: top;
+    float: right;
+
+}
+
+#icon{
+    width: 20px;
+    margin-left: -50px; 
+    position: absolute;
+    top: 8px;
+    animation: 1s infinite;
+    animation-name: fleche;
+}
+@keyframes fleche {
+    0%   {left:0px}
+    50%  {left:-20px;}
+    100% {left:0px;}
+}
+
+#totalPerson{
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}

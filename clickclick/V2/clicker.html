@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" description="">
+    <title>How many click ?</title>
+    <link rel="stylesheet" href="klik.css">
+</head>
+<body>
+    <nav>
+        <p class="gris">How many click ?</p>
+        <p class="gris" class="reseaux"> - </p>
+        <p class="gris"> ©   <a href="../../sb/index.html">Spacebird</a>   2017</p>
+        <p class="gris" class="reseaux"> - </p>
+        <p class="reseaux"><a href="../../carrePage/carre.html">Find the cat</a></p>
+        <p class="version">V. 1.01</p>
+    </nav>
+    <div id="infos">
+        <h4>?</h4>
+        <div class="information">
+            <h2>How to play ?</h2> 
+            <p>Enter your username first and follow the instructions to play correctly.</p>
+            <p>Place your mouse in the center of the screen, on the green button. When you are ready, push with your finger on the mouse and push up the click counter.</p>
+            <p>Your score is saved and you can improve it if you come back another day.</p>
+            <p>Make the most clicks and stay in the top of the ranking !</p>
+            <p>Choose the right strategy... Good luck !</p>
+        </div>
+    </div>
+    <div class="colonne1 colonne">
+        <div class="here">
+            <h1>Click</h1> 
+            <h1>Here</h1>
+        </div>
+        <h2>></h2>
+    </div>
+    <div class="colonne2 colonne">
+        <div class="compteur">
+            <h1><span>0</span></h1>
+            <h3>Click from people</h3> 
+        </div>
+        <div class="bouton"><button id="clicker" type='submit'><img src='bouton.png' alt='' /></button></div>
+        <div class="compteur2">
+            <h3>You have clicked :</h3> 
+            <h1><span>0</span></h1>
+        </div>    
+    </div>
+    <div class="colonne3 colonne">
+        <div class="ranking">
+            <h3>Ranking</h3>
+            <div class="ligne"></div>
+            <table id="leaderboard">
+                <thead>
+                    <tr>
+                        <th width="10%">N.</th>
+                        <th width="55%">Username</th>
+                        <th width="35%">Clicks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>1.</li>
+                                <li>2.</li>
+                                <li>3.</li>
+                                <li>4.</li>
+                                <li>5.</li>
+                                <li>6.</li>
+                                <li>7.</li>
+                                <li>8.</li>
+                                <li>9.</li>
+                                <li>10.</li>
+                            </ul>
+                        </td>
+                        <td><ul id="userList"></ul></td>
+                        <td><ul id="userClicks"></ul></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>...</p>
+            <table id="yourPos" id="leaderboard">
+                <tr>
+                    <td width="10%" id="taPosition">Pos.</td> 
+                    <td width="55%" id="tonUsername">John Doe</td>
+                    <td width="35%" id="tonScore">0</td>
+                </tr>
+            </table>
+            <div id="firstStep">
+                <img id="icon"src="fleche.png" alt="">
+                <input type="text" name="username" maxlength="10" placeholder="Enter your username">
+                <button id="saveButton">SAVE</button> 
+            </div>
+            <h4 id="totalPerson">x people clicked</h4>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="../../a propos/about.html">About www.spacebird.io</a></p>
+    </footer>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAd3iXnpbuKzzP4PCHhnYF5MUzTThi-uX8",
+        authDomain: "clicker-9c5ee.firebaseapp.com",
+        databaseURL: "https://clicker-9c5ee.firebaseio.com",
+        projectId: "clicker-9c5ee",
+        storageBucket: "",
+        messagingSenderId: "175163560043"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="qliq.js"></script>
+</body>
+</html>

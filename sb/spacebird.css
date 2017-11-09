@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400');
+
+body{
+    background-color: black;
+    text-align: center;
+    
+}
+
+img{
+    width: 160px;
+    margin: 20px 0 60px;
+}
+
+h1{
+    font-family: Montserrat;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 50px 0; 
+    padding: 10px;
+    background-color: black;
+    display: inline-block;
+    transition: all 0.3s ease;
+    
+}
+
+h1:hover{
+    background-color: white;
+    color: black;
+    font-weight: 400;
+}
+
